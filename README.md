@@ -6,4 +6,4 @@
 
 Цифровая схема:
 
-![alt text](formula-1.jpg)
+![alt text](formula.jpg)

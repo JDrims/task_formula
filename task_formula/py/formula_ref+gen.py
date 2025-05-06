@@ -18,7 +18,7 @@ def math_round_q(q):
     """Округляет q по математическим правилам"""
     return math.floor(q + 0.5) if q >= 0 else math.ceil(q - 0.5)
 
-with open('С:/test_cases.txt', 'w') as f:
+with open('C:/test_cases.txt', 'w') as f:
     for _ in range(500):
         # Генерация 8-битных знаковых чисел
         a_bin = generate_signed_8bit()
@@ -35,13 +35,13 @@ with open('С:/test_cases.txt', 'w') as f:
         # Вычисление q и преобразование в 21-битное знаковое
         q = compute_q(a, b, c, d)
         q_round = math_round_q(q)
-        q_bin = int_to_signed_bin(int(q_round), 22)
-        q_bin_int = int(q_bin, 2) if int(q_bin, 2) < 2**21 else int(q_bin, 2) - 2**22
+        q_bin = int_to_signed_bin(int(q_round), 21)
+        q_bin_int = int(q_bin, 2) if int(q_bin, 2) < 2**20 else int(q_bin, 2) - 2**21
         
         str = 0
         # Запись в файл
-        f.write(f"{a_bin.zfill(22)}\n{b_bin.zfill(22)}\n{c_bin.zfill(22)}\n{d_bin.zfill(22)}\n{q_bin}\n")
+        f.write(f"{a_bin.zfill(21)}\n{b_bin.zfill(21)}\n{c_bin.zfill(21)}\n{d_bin.zfill(21)}\n{q_bin}\n")
         # f.write(f"{q} {q_round} {q_bin_int}\n")
 
 
-print("'С:/test_cases.txt'")
+print("'C:/test_cases.txt'")
