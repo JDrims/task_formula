@@ -1,0 +1,56 @@
+py/*.sv: Invalid argument
+No top level modules, and no -s option.
+scr/testbench.sv:41: warning: Port 9 (q) of formula expects 23 bits, got 22.
+scr/testbench.sv:41:        : Padding (signed) 1 high bits of the port.
+WARNING: scr/testbench.sv:67: $readmemb(C:/test_cases.txt): Too many words in the file for the requested range [0:499].
+VCD info: dumpfile dump.vcd opened for output.
+VCD warning: $dumpvars: Package ($unit) is not dumpable with VCD.
+PASS   1: res ok. Expected 2816, actual 2816
+PASS   2: res ok. Expected 468, actual 468
+PASS   3: res ok. Expected -16591, actual -16591
+PASS   4: res ok. Expected -2747, actual -2747
+PASS   5: res ok. Expected -138, actual -138
+PASS   6: res ok. Expected -12688, actual -12688
+PASS   7: res ok. Expected 1348, actual 1348
+PASS   8: res ok. Expected -285, actual -285
+PASS   9: res ok. Expected -7146, actual -7146
+PASS  10: res ok. Expected -4179, actual -4179
+PASS  11: res ok. Expected 3211, actual 3211
+PASS  12: res ok. Expected -1208, actual -1208
+PASS  13: res ok. Expected -4274, actual -4274
+PASS  14: res ok. Expected -15226, actual -15226
+PASS  15: res ok. Expected 3603, actual 3603
+PASS  16: res ok. Expected -6375, actual -6375
+PASS  17: res ok. Expected 23667, actual 23667
+PASS  18: res ok. Expected 5350, actual 5350
+PASS  19: res ok. Expected -905, actual -905
+PASS  20: res ok. Expected -18990, actual -18990
+PASS  21: res ok. Expected -11764, actual -11764
+PASS  22: res ok. Expected -235, actual -235
+PASS  23: res ok. Expected 464, actual 464
+PASS  24: res ok. Expected -1908, actual -1908
+PASS  25: res ok. Expected -1566, actual -1566
+PASS  26: res ok. Expected -18616, actual -18616
+PASS  27: res ok. Expected 1374, actual 1374
+PASS  28: res ok. Expected -928, actual -928
+PASS  29: res ok. Expected -5833, actual -5833
+PASS  30: res ok. Expected -5577, actual -5577
+PASS  31: res ok. Expected -10456, actual -10456
+PASS  32: res ok. Expected -3866, actual -3866
+PASS  33: res ok. Expected 216, actual 216
+PASS  34: res ok. Expected 3230, actual 3230
+PASS  35: res ok. Expected -21140, actual -21140
+PASS  36: res ok. Expected -585, actual -585
+PASS  37: res ok. Expected -28649, actual -28649
+PASS  38: res ok. Expected 3566, actual 3566
+PASS  39: res ok. Expected -8666, actual -8666
+PASS  40: res ok. Expected -5934, actual -5934
+PASS  41: res ok. Expected 21536, actual 21536
+PASS  42: res ok. Expected -3015, actual -3015
+PASS  43: res ok. Expected 8170, actual 8170
+PASS  44: res ok. Expected -32212, actual -32212
+PASS  45: res ok. Expected -746, actual -746
+PASS  46: res ok. Expected 12596, actual 12596
+PASS  47: res ok. Expected 2307, actual 2307
+PASS  48: res ok. Expected -1310, actual -1310
+PASS  49: res ok. Expected -4178, actual -4178

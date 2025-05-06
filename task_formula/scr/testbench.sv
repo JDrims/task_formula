@@ -62,12 +62,6 @@ module tb #(
     logic [width_out-1:0] test_cases [0:499];
     logic [7:0] counter = 0;
 
-    logic signed [width_out-1:0] res_expected_1;
-    logic signed [width_out-1:0] res_expected_2;
-    logic signed [width_out-1:0] res_expected_3;
-    logic signed [width_out-1:0] res_expected_4;
-    logic signed [width_out-1:0] res_expected_5;
-
     initial
     begin
         $readmemb("C:/test_cases.txt", test_cases);
@@ -103,22 +97,20 @@ module tb #(
 
     event check_moment;
 
-    // always @ (posedge clk)
-    // begin
-    //     #1
-    //     if (vld_out) begin
-    //         if (q !== q_expected)
-    //         begin
-    //             $display ("FAIL %d: res mismatch. Expected %0d, actual %0d", counter, q_expected, q);
-    //             $finish;
-    //         end
-    //         else 
-    //         begin
-    //             $display ("PASS %d: res ok. Expected %0d, actual %0d", counter, q_expected, q);
-    //             -> check_moment;
-    //         end   
-    //     end 
-    // end
+    always @ (posedge clk)
+    begin
+        if (vld_out && counter != 0) begin
+            if (q !== q_expected)
+            begin
+                $display ("FAIL %d: res mismatch. Expected %0d, actual %0d", counter, q_expected, q);
+            end
+            else 
+            begin
+                $display ("PASS %d: res ok. Expected %0d, actual %0d", counter, q_expected, q);
+                -> check_moment;
+            end   
+        end 
+    end
 
     // Testbench
     //------------------------------------------------------------------------
@@ -154,12 +146,11 @@ module tb #(
     //         begin
     //             if (q !== res_expected)
     //             begin
-    //                 $display ("FAIL %d: res mismatch. Expected %0d, actual %0d", counter, $signed(res_expected), q);
-    //                 $finish;
+    //                 $display ("FAIL %d: res mismatch. Expected %0d, actual %0d", counter, (res_expected), q);
     //             end
     //             else
     //             begin
-    //                 $display ("PASS %d: res ok. Expected %0d, actual %0d", counter, $signed(res_expected), q);
+    //                 $display ("PASS %d: res ok. Expected %0d, actual %0d", counter, (res_expected), q);
     //             end
     //         end
     //     end     
