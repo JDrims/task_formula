@@ -1,0 +1,28 @@
+py/*.sv: Invalid argument
+No top level modules, and no -s option.
+scr/testbench.sv:41: warning: Port 9 (q) of formula expects 23 bits, got 22.
+scr/testbench.sv:41:        : Padding (signed) 1 high bits of the port.
+VCD info: dumpfile dump.vcd opened for output.
+VCD warning: $dumpvars: Package ($unit) is not dumpable with VCD.
+PASS  0: res ok. Expected x, actual x
+PASS  1: res ok. Expected 2084, actual 2084
+PASS  2: res ok. Expected 19420, actual 19420
+PASS  3: res ok. Expected -2252, actual -2252
+PASS  4: res ok. Expected -854, actual -854
+PASS  5: res ok. Expected -1318, actual -1318
+PASS  6: res ok. Expected -2586, actual -2586
+PASS  7: res ok. Expected 4981, actual 4981
+PASS  8: res ok. Expected -8364, actual -8364
+PASS  9: res ok. Expected 20758, actual 20758
+PASS 10: res ok. Expected -2666, actual -2666
+PASS 11: res ok. Expected 689, actual 689
+PASS 12: res ok. Expected 4114, actual 4114
+PASS 13: res ok. Expected 2573, actual 2573
+PASS 14: res ok. Expected 19190, actual 19190
+PASS 15: res ok. Expected -4421, actual -4421
+PASS 16: res ok. Expected -2096, actual -2096
+PASS 17: res ok. Expected -18094, actual -18094
+PASS 18: res ok. Expected -2232, actual -2232
+PASS 19: res ok. Expected -2964, actual -2964
+PASS 20: res ok. Expected -9609, actual -9609
+PASS 21: res ok. Expected 23196, actual 23196
